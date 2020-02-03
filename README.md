@@ -1,4 +1,4 @@
-# JavaHowToProgram10eEarlyObjectsVersion
+# Java How to Program, 10/e, Early Objects Version
 Code downloads for Java How to Program, 10/e, Early Objects Version
 
 All examples are copyright Pearson Education, Inc. and are for your own personal use. 
