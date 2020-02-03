@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="TOP_LEFT" hgap="8.0" vgap="0.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="TipCalculatorController">
+  <children>
+    <Label text="Amount" textAlignment="RIGHT" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+    <Label fx:id="tipPercentageLabel" text="15%" textAlignment="RIGHT" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+    <Label text="Tip" textAlignment="RIGHT" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+    <Label text="Total" textAlignment="RIGHT" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+    <TextField id="amountTextBox" fx:id="amountTextField" prefWidth="-1.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+    <Slider fx:id="tipPercentageSlider" blockIncrement="5.0" majorTickUnit="1.0" max="30.0" minorTickCount="1" showTickLabels="false" showTickMarks="false" snapToTicks="true" value="15.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+    <TextField fx:id="tipTextField" editable="false" focusTraversable="false" prefWidth="-1.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+    <TextField fx:id="totalTextField" editable="false" focusTraversable="false" prefWidth="-1.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+    <Button fx:id="calculateButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#calculateButtonPressed" text="Calculate" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+  </children>
+  <columnConstraints>
+    <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="-1.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="-1.0" />
+  </columnConstraints>
+  <padding>
+    <Insets bottom="14.0" left="14.0" right="14.0" top="14.0" />
+  </padding>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+</GridPane>
